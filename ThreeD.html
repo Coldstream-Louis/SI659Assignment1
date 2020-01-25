@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="//aframe.io/releases/0.7.1/aframe.min.js"></script>
+    <script src="//rawgit.com/Utopiah/googlepoly-load-component/master/googlepoly-load-component.js"></script>
+    <script src="//unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+</head>
+<body>
+<a-scene>
+
+    <a-text value="Shuyang Du' s Scene" position="1.5 3 -3"></a-text>
+
+    <!--Ground-->
+    <a-plane id="plane" position="0 0 -4" rotation="-90 0 0" width="5" height="5" color="#7BC8A4" material="color: lightgreen" scale="1 1 1"></a-plane>
+
+    <!--Tree 1-->
+    <a-entity id="tree1" position="-1 3 -3.5">
+        <a-sphere position="0 0 0" radius="0.8" color="green" scale="1 1 1"></a-sphere>
+        <a-cylinder position="0 -1.5 0" radius="0.1" height="3" color="darkgreen" scale="1 1 1"></a-cylinder>
+    </a-entity>
+
+    <!--Tree 2-->
+    <a-entity id="tree2" position="1 3 -5">
+        <a-sphere position="0 0 0" radius="0.8" color="green" scale="1 1 1"></a-sphere>
+        <a-cylinder position="0 -1.5 0" radius="0.1" height="3" color="darkgreen" scale="1 1 1"></a-cylinder>
+    </a-entity>
+
+    <!--jigglypuff-->
+    <!-- Model Source: https://poly.google.com/view/2yQA0j-YAj6 -->
+    <a-entity id="jigglypuff" position="0 0.5 -5" scale="1 1 1" rotation="0 180 0" gpoly="polyid:2yQA0j-YAj6; API_KEY:AIzaSyDSObbkimhVP_CfjA0XY-DKT5o-wPZLDVo;" ></a-entity>
+
+    <!--mew-->
+    <!-- Model Source: https://poly.google.com/view/3riRBivJah7 -->
+    <a-entity id="mew" position="0 3 -3" scale="2 2 2" rotation="0 200 0" gpoly="polyid:3riRBivJah7; API_KEY:AIzaSyDSObbkimhVP_CfjA0XY-DKT5o-wPZLDVo;" ></a-entity>
+
+    <!--oddish-->
+    <!-- Model Source: https://poly.google.com/view/bUYJVwEUrHD -->
+    <a-entity id="oddish" position="-1 1 -2" scale="0.5 0.5 0.5" rotation="0 240 0" gpoly="polyid:bUYJVwEUrHD; API_KEY:AIzaSyDSObbkimhVP_CfjA0XY-DKT5o-wPZLDVo;" ></a-entity>
+
+    <!--haunter-->
+    <!-- Model Source: https://poly.google.com/view/e4shTQwFTFk -->
+    <a-entity id="haunter" position="1 1 -2.5" scale="1 1 1" rotation="0 180 0" gpoly="polyid:e4shTQwFTFk; API_KEY:AIzaSyDSObbkimhVP_CfjA0XY-DKT5o-wPZLDVo;" ></a-entity>
+
+    <a-sky color="lightskyblue" />
+</a-scene>
+
+</body>
+</html>
